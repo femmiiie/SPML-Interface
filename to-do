@@ -1,0 +1,15 @@
+-Create database
+-Link excel to database with JS
+-Create timer (2 weeks) to query excel for updates
+-Create script to force query
+
+-Create UI
+-Finish HTML (create form sends and PHP)
+-Add Event Listeners
+
+
+-Create PHP Backend to communicate with SQL
+
+
+Long way off:
+-Config system to fix things from front end

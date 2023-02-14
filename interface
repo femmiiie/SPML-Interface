@@ -60,4 +60,24 @@
     <input type="submit" value="SEARCH">
 </form>
 
+
+
+
+<footer>
+    <form>
+        <p>List Query</p>
+        <label for="updatePass">Password</label>
+        <input type="password" id="updatePass">
+        <input type="submit" value="Update">
+    </form>
+    <form>
+        <p>Config Update</p>
+        <label for="configPass">Password</label>
+        <input type="password" id="configPass">
+        <label for="configUD">Config Info</label>
+        <input type="text" id="configUD">
+        <input type="submit" value="Update">
+    </form>
+</footer>
+
 </html>

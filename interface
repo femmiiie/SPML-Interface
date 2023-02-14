@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<title>Sponger Music Library Interface</title>
+<h1>SPMLI</h1>
+
+<form>
+
+    <label for ="sheet-type">Search In:</label>
+    <select name="sheet-type" id="sheet-type">
+        <option value="wind">Concert Band</option>
+        <option value="jazz">Jazz</option>
+        <option value="misc">Misc.</option>
+    </select>
+
+        <label for="num">No.</label>
+    <input type="number" id="num">
+
+        <label for="title">Title</label>
+    <input type="text" id="title">
+
+        <label for="composer">Composer (Last, First)</label>
+    <input type="text" id="composer">
+
+        <label for="arranger">Arranger (Last, First)</label>
+    <input type="text" id="arranger">
+
+        <label for="grade">Grade</label>
+    <input type="number" id="grade">
+
+    <select name="type" id="type">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </select>
+
+    <select name="instrument" id="instrument">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+    </select>
+
+        <label for="publisher">Publisher</label>
+    <input type="text" id="publisher">
+
+    <input type="radio" id="scoreY" name="score" value="Yes">
+        <label for="scoreY">Yes</label>
+    <input type="radio" id="scoreN" name="score" value="No">
+        <label for="scoreN">No</label>
+
+        <label for="amount">Amount</label>
+    <input type="number" id="amount">
+
+        <label for="missing">Missing Parts?</label>
+    <input type="checkbox" id="missing">
+
+    <input type="reset" value="RESET">
+    <input type="submit" value="SEARCH">
+</form>
+
+</html>

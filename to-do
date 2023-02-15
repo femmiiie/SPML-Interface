@@ -1,5 +1,5 @@
 -Create database
--Link excel to database with JS
+-Link excel to database with PHP
 -Create timer (2 weeks) to query excel for updates
 -Create script to force query
 

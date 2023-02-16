@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet" : "1.27.1",
+        "ext-dom" : "*",
+        "ext-gd" : "*",
+        "ext-mbstring" : "*",
+        "ext-simplexml" : "*",
+        "ext-xml" : "*",
+        "ext-xmlreader" : "*",
+        "ext-xmlwriter" : "*",
+        "ext-zip" : "*"
+    }
+}

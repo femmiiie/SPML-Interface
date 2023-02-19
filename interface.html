@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <header>
-    <script src="scripts.js" type="text/javascript">
-    </script>
 
 </header>
 
@@ -10,12 +8,12 @@
 <h1>Sponger Music Library Interface</h1>
 <h2>SPMLI</h2>
 
-<form>
-    <label for ="sheet-type">Search In:</label>
-    <select name="sheet-type" id="sheet-type" onchange="optionSelector()" >
-        <option value="wind">Concert Band
-        <option value="jazz">Jazz
-        <option value="misc">Misc.
+<form id="searchform">
+    <label for ="sheettype">Search In:</label>
+    <select name="sheet-type" id="sheettype">
+        <option value="wind">Concert Band</option>
+        <option value="jazz">Jazz</option>
+        <option value="misc">Misc.</option>
     </select>
     <br>
 
@@ -28,17 +26,20 @@
         <label for="arranger">Arranger (Last, First)</label>
     <input type="text" id="arranger">
 
-        <label for="grade">Grade</label>
+        <label for="grade" id="gradeL">Grade</label>
     <input type="number" id="grade">
+        
 
-    <select name="type" id="type">
+    <label for="type" id="typeL" hidden>Piece Type</label>
+    <select name="type" id="type" hidden>
         <option value=""></option>
         <option value=""></option>
         <option value=""></option>
         <option value=""></option>
     </select>
 
-    <select name="instrument" id="instrument">
+    <label for="instrument" id="instrumentL" hidden>Instrument(s)</label>
+    <select name="instrument" id="instrument" hidden>
         <option value=""></option>
         <option value=""></option>
         <option value=""></option>
@@ -47,17 +48,16 @@
 
         <label for="publisher">Publisher</label>
     <input type="text" id="publisher">
-    <label for="score">Score?</label>
-    <input type="radio" id="scoreY" name="score" value="Yes">
-        <label for="scoreY">Yes</label>
-    <input type="radio" id="scoreN" name="score" value="No">
-        <label for="scoreN">No</label>
 
-        <label for="amount">Amount</label>
-    <input type="number" id="amount">
+    <label for="amount" id="amountL" hidden>Amount</label>
+    <input type="number" id="amount" hidden>
 
-        <label for="missing">Missing Parts?</label>
+        <label for="score" id="scoreL">Score?</label>
+    <input type="checkbox" id="score">
+
+        <label for="missing" id="missingL">Missing Parts?</label>
     <input type="checkbox" id="missing">
+
     <br>
     <input type="reset" value="RESET">
     <input type="submit" value="SEARCH">
@@ -87,6 +87,9 @@
 
         <input type="submit" value="Update">
     </form>
+
+    <script src="scripts.js" type="text/javascript">
+    </script>
 </footer>
 
 </html>

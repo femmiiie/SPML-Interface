@@ -53,8 +53,19 @@ function formReset() {
     setHiddenWL('amount');
     removeHiddenWL('score');
     removeHiddenWL('missing');
+    document.getElementById("extra").setAttribute("hidden", "hidden");
+}
+
+function divOpen() {
+    let panel = document.getElementById("extra");
+    if (panel.hidden === true) {
+        panel.removeAttribute("hidden");
+    } else {
+        panel.setAttribute("hidden", "hidden");
+    }
 }
 
 //Event Listeners
-document.getElementById("sheettype").addEventListener("change", optionSelector)
-document.getElementById("searchform").addEventListener("reset", formReset)
+document.getElementById("sheettype").addEventListener("change", optionSelector);
+document.getElementById("searchform").addEventListener("reset", formReset);
+document.getElementById("drop").addEventListener("click", divOpen);

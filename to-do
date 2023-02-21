@@ -1,5 +1,5 @@
 -Create database
--Link excel to database with PHP
+-Link excel to database with JS
 -Create timer (2 weeks) to query excel for updates
 -Create script to force query
 
@@ -8,7 +8,7 @@
 -Form Validation
 
 
--Create PHP Backend to communicate with SQL
+-Create JS Backend to communicate with SQL
 
 
 Long way off:

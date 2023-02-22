@@ -8,9 +8,9 @@
 <h1>Sponger Music Library Interface</h1>
 <h2>SPMLI</h2>
 
-<form id="searchform">
+<form id="searchform" action="dbQuery.php" method="post">
     <label for ="sheettype">Search In:</label>
-    <select name="sheet-type" id="sheettype">
+    <select name="sheettype" id="sheettype">
         <option value="wind">Concert Band</option>
         <option value="jazz">Jazz</option>
         <option value="misc">Misc.</option>
@@ -18,19 +18,20 @@
     <br>
 
         <label for="title">Title</label>
-    <input type="text" id="title">
+    <input type="text" name="title" id="title">
 
         <label for="composer">Composer (Last, First)</label>
-    <input type="text" id="composer">
+    <input type="text" name="composer" id="composer">
 
         <label for="arranger">Arranger (Last, First)</label>
-    <input type="text" id="arranger">
+    <input type="text" name="arranger" id="arranger">
 
     <br>
+
     <button id="drop" type="button">Extra Settings</button>
     <div id="extra" hidden>
             <label for="grade" id="gradeL">Grade</label>
-        <input type="number" id="grade" min="1" max="7" step="0.5">
+        <input type="number" name="grade" id="grade" min="1" max="7" step="0.5">
         
 
         <label for="type" id="typeL" hidden>Piece Type</label>
@@ -50,16 +51,16 @@
         </select>
 
             <label for="publisher">Publisher</label>
-        <input type="text" id="publisher">
+        <input type="text" name="publisher" id="publisher">
 
             <label for="amount" id="amountL" hidden>Amount</label>
-        <input type="number" id="amount" hidden max="50" min="1">
+        <input type="number" name="amount" id="amount" hidden max="50" min="1">
 
             <label for="score" id="scoreL">Score?</label>
-        <input type="checkbox" id="score">
+        <input type="checkbox" name="score" id="score">
 
             <label for="missing" id="missingL">Missing Parts?</label>
-        <input type="checkbox" id="missing">
+        <input type="checkbox" name="missing" id="missing">
 
     </div>
 

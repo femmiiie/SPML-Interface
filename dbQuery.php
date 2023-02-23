@@ -19,11 +19,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   // Create an SQL query using the filtered data
   if ($sheet === 'wind'){
-    $sql = 'SELECT * FROM {$sheet}';
+    $sql = "SELECT * FROM $sheet
+    WHERE title LIKE '%$title%' AND composer LIKE '%$composer%' AND arranger LIKE '%$arranger%'
+    ORDER BY title;";
   } elseif ($sheet === 'jazz') {
-    $sql = 'SELECT * FROM {$sheet}';
+    $sql = "SELECT * FROM $sheet
+    WHERE title LIKE '%$title%' AND composer LIKE '%$composer%' AND arranger LIKE '%$arranger%'
+    ORDER BY title;";
   } else {
-    $sql = 'SELECT * FROM {$sheet}';
+    $sql = "SELECT * FROM $sheet
+    WHERE title LIKE '%$title%' AND composer LIKE '%$composer%' AND arranger LIKE '%$arranger%'
+    ORDER BY title;";
   }
 
   

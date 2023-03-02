@@ -1,5 +1,4 @@
 
-
 //Streamlines hiding and showing the input and its label
 function setHiddenWL(id) {
     document.getElementById(id).setAttribute("hidden", "hidden");
@@ -65,7 +64,13 @@ function divOpen() {
     }
 }
 
-//Event Listeners
+//Search Event Listeners
 document.getElementById("sheettype").addEventListener("change", optionSelector);
 document.getElementById("searchform").addEventListener("reset", formReset);
 document.getElementById("drop").addEventListener("click", divOpen);
+
+
+//Table Sorting Function
+
+
+//Table Event Listeners

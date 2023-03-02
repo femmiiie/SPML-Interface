@@ -18,21 +18,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $missingYN = $_POST['missing'];
 
   // Create an SQL query using the filtered data
-  if ($sheet === 'wind'){
-    $sql = "SELECT * FROM $sheet
+  if ($sheet === 'Wind Ensemble Music'){
+    $sql = "SELECT * FROM Wind_Ensemble_Music
     WHERE title LIKE '%$title%' AND composer LIKE '%$composer%' AND arranger LIKE '%$arranger%'
     ORDER BY title;";
-  } elseif ($sheet === 'jazz') {
-    $sql = "SELECT * FROM $sheet
+  } elseif ($sheet === 'Jazz Music') {
+    $sql = "SELECT * FROM Jazz_Music
     WHERE title LIKE '%$title%' AND composer LIKE '%$composer%' AND arranger LIKE '%$arranger%'
     ORDER BY title;";
   } else {
-    $sql = "SELECT * FROM $sheet
+    $sql = "SELECT * FROM Misc_Music
     WHERE title LIKE '%$title%' AND composer LIKE '%$composer%' AND arranger LIKE '%$arranger%'
     ORDER BY title;";
   }
 
-  
-
-  
 }

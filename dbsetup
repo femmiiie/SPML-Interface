@@ -1,0 +1,13 @@
+CREATE DATABASE SPML;
+
+CREATE TABLE main (
+    id INT PRIMARY KEY ,
+    title VARCHAR NOT NULL,
+    composer VARCHAR,
+    arranger VARCHAR
+)
+
+CREATE TABLE wind_ensemble_music (
+    id INT PRIMARY KEY,
+
+)
